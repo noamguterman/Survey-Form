@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Theater Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Dream Theater Survey Form</h1>
+    <p id="description"><em>Thank you for taking the time to fill out this survey</em></p>
+    </header>
+  <div id="main">
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+   <!--     <legend>Personal details</legend> -->
+        <label id="name-label">Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required />
+        </label>
+       <label id="email-label">Email</label>
+         <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+       </label>
+       <label id="number-label">Age <span class="optional">(optional)</span></label>
+          <input id="number" name="number" type="number" min="18" max="120" placeholder="Age" />
+       </label>
+     </fieldset>
+     <fieldset>
+       <legend>Favorite Mike?</legend>
+       <label for="portnoy">
+         <input id="portnoy" type="radio" name="fav-mike" value="Portnoy" class="inline" /> Portnoy
+       </label>
+       <label for="mangini">
+         <input id="mangini" type="radio" name="fav-mike" value="Mangini" class="inline" /> Mangini
+     </fieldset>
+     <fieldset>
+      <legend>Favorite album?</legend>
+      <label for="dropdown">
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">When Dream And Day Unite</option>
+          <option value="2">Images & Words</option>
+          <option value="3">Awake</option>
+          <option value="4">Falling Into Infinity</option>
+          <option value="5">Scenes From A Memory</option>
+          <option value="6">Six Degress Of Inner Turbulance</option>
+          <option value="7">Train Of Thought</option>
+          <option value="8">Octavarium</option>
+          <option value="9">Systematic Chaos</option>
+          <option value="10">Black Clouds & Silver Linings</option>
+          <option value="11">A Dramatic Turn Of Events</option>
+          <option value="12">Dream Theater</option>
+          <option value="13">The Astonishing</option>
+          <option value="14">Distance Over Time</option>
+          <option value="15">A View From The Top Of The World</option>
+         </select>
+        </label>
+      </fieldset>
+      <fieldset>
+      <legend>Preffered musical element? <span class="optional">(Check all that apply)</span></legend>
+        <label for="element-progressive">
+          <input type="checkbox" id="element-progressive" name="element-progressive" value="Progressive" class="inline"> Progressive
+        </label>
+        <label for="element-melodic">
+          <input type="checkbox" id="element-melodic" name="element-melodic" value="Melodic" class="inline"> Melodic
+        </label>
+        <label for="element-metal">
+          <input type="checkbox" id="element-metal" name="element-metal" value="Metal" class="inline"> Metal
+        </label>
+        <label for="element-pop">
+          <input type="checkbox" id="element-pop" name="element-pop" value="Pop" class="inline"> Pop
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="comment">Leave a comment:
+          <textarea id="comment" name="comment" placeholder="DT4Life..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+   </form>
+  </div>
+  </body>
+</html>
